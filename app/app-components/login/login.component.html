@@ -1,0 +1,35 @@
+<MainActionBar></MainActionBar>
+<GridLayout>
+
+    <StackLayout #mainContainer
+                 class="main-container">
+        <Label class="main-label" text="Login"></Label>
+
+        <GridLayout #formControls
+                    class="form-controls"
+                    rows="auto, auto"
+                    translateY="50">
+            <TextField #email
+                       hint="Email Address"
+                       keyboardType="email"
+                       returnKeyType="next"
+                       (returnPress)="focusPassword()"
+                       [(ngModel)]="user.email"
+                       autocorrect="false"
+                       autocapitalizationType="none"
+                       row="0"></TextField>
+            <TextField #password
+                       hint="Password"
+                       secure="true"
+                       returnKeyType="done"
+                       (returnPress)="submit()"
+                       [(ngModel)]="user.password"
+                       row="1"></TextField>
+
+        </GridLayout>
+
+        <Button text="Login" class="btn btn-primary" (tap)="submit()"></Button>
+
+    </StackLayout>
+
+</GridLayout>

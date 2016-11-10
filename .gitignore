@@ -1,0 +1,11 @@
+.vscode
+hooks
+lib
+node_modules
+platforms
+in/dist
+tags
+**/*.js.map
+**/*.metadata.json
+*.js
+.idea

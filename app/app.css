@@ -1,0 +1,37 @@
+﻿@import '~/css/core.light.css';
+@import '~/css/font-awesome.css';
+
+.fa {
+    font-family: FontAwesome, fontawesome-webfont;
+}
+
+.sideTitleStackLayout {
+    padding: 12;
+    color: black;
+}
+
+.sideLightGrayLabel {
+    background-color: lightgray;
+    padding: 7;
+}
+
+.sideTitleStackLayoutIcon {
+    padding: 12;
+    color: black;
+    text-align: left;
+}
+
+.page-bg {
+    background-color: #010006;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+
+.side-label{
+    padding: 2;
+    vertical-align: center;
+    text-align: left;
+}

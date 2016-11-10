@@ -1,0 +1,29 @@
+{
+	"name": "tns-sidedrawer-ts",
+	"main": "app.module.js",
+	"version": "2.3.0",
+	"author": "greenstevester",
+	"description": "Nativescript SideDrawer example",
+	"license": "Apache-2.0",
+	"keywords": [
+		"mobile",
+		"nativescript",
+		"{N}",
+		"tns",
+		"SideDrawer"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:greenstevester/nativescript-sidedrawer-example.git"
+	},
+	"bugs": {
+		"url": "https://github.com/greenstevester/nativescript-sidedrawer-example/issues"
+	},
+	"homepage": "https://github.com/greenstevester/nativescript-sidedrawer-example",
+	"android": {
+		"v8Flags": "--expose_gc"
+	},
+	"devDependencies": {
+		"nativescript-dev-typescript": "^0.3.2"
+	}
+}

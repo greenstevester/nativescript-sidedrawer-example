@@ -1,0 +1,35 @@
+<MainActionBar></MainActionBar>
+<RadSideDrawer #drawer
+               (drawerOpening)="onDrawerOpening()"
+               (drawerOpened)="onDrawerOpened()"
+               (drawerClosing)="onDrawerClosing()"
+               (drawerClosed)="onDrawerClosed()"
+               [transition]="sideDrawerTransition" selectionBehavior="None">
+
+    <StackLayout tkDrawerContent class="sidedrawer-left">
+        <ScrollView row="0" col="2">
+            <StackLayout class="sidedrawer-content">
+                 <GridLayout class="sideLightGrayLabel">
+                    <Label text="ACCOUNT" class="sidedrawer-list-item-text"></Label>
+                </GridLayout>
+                <GridLayout columns="auto, *" rows="60" class="side-item" pageTransition="slideLeft">
+                    <Label text="&#xf0f0;" class="fa sidedrawer-list-item-icon" row="0" col="0"></Label>
+                    <Label text="login" class="side-label" row="0" col="1" [nsRouterLink]="['/home/login']" clearHistory="true"></Label>
+                    <!-- see http://fontawesome.io/cheatsheet/ for icons -->
+                </GridLayout>
+                <GridLayout columns="auto, *" rows="60" class="side-item" pageTransition="slideLeft">
+                    <Label text="&#xf002;" class="fa sidedrawer-list-item-icon" row="0" col="0"></Label>
+                    <Label text="help" class="side-label" row="0" col="1" [nsRouterLink]="['/home/help']" clearHistory="true"></Label>
+                </GridLayout>
+                <GridLayout class="sideLightGrayLabel">
+                    <Label text="SETTINGS" class="sidedrawer-list-item-text"></Label>
+                </GridLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
+    <StackLayout tkMainContent class="bg-primary">
+        <router-outlet></router-outlet>
+    </StackLayout>
+
+</RadSideDrawer>
