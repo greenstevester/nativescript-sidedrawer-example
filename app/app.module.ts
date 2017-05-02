@@ -1,6 +1,5 @@
 ﻿// nativescript
 import {NativeScriptRouterModule, platformNativeScriptDynamic} from "nativescript-angular";
-import {NativeScriptModule} from 'nativescript-angular/platform';
 import {NativeScriptFormsModule} from 'nativescript-angular/forms';
 import {NativeScriptHttpModule} from 'nativescript-angular/http';
 import {SIDEDRAWER_DIRECTIVES} from "nativescript-telerik-ui/sidedrawer/angular";
@@ -19,6 +18,7 @@ import {HelpComponent} from './app-components/help/help.component';
 import {LoginComponent} from "./app-components/login/login.component";
 import {AppComponent} from "./app-components/app.component";
 import {WelcomeComponent} from "./app-components/welcome/welcome.component";
+import {NativeScriptModule} from "nativescript-angular/nativescript.module";
 
 export const APP_ROUTES: Routes = [
     {
