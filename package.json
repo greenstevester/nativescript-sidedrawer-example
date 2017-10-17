@@ -7,6 +7,9 @@
     "id": "org.nativescript.myapp",
     "tns-ios": {
       "version": "2.5.0"
+    },
+    "tns-android": {
+      "version": "3.2.0"
     }
   },
   "dependencies": {
