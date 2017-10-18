@@ -22,7 +22,7 @@ import {RouterExtensions} from "nativescript-angular";
     moduleId: module.id,
     selector: "login",
     templateUrl: "login.component.html",
-    styleUrls: ["login-common.css", "login.component.css"],
+    styleUrls: ["login.component.css"],
     changeDetection: ChangeDetectionStrategy.Default
 })
 export class LoginComponent implements OnInit, AfterViewInit, OnDestroy {

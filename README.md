@@ -14,7 +14,9 @@ I also put tons of logging in for both my benefit and yours (if you're new to th
 
 * Run `tns install` from the project root.  
     
-* tns run ios --emulator  (yep, tested on ios only for the moment)
+* tns run ios --emulator
+
+* tns run android
 
 ## Use Cases
 
